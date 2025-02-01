@@ -1,0 +1,509 @@
+<html lang="en">
+ <head>
+  <link rel="icon" href="2dbbe8adf26f721747f8c6f60b545f1e-removebg-preview.png" type="favicon.ico">
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+  <title>
+   Phone Guy Discord Bot
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url('b471d641c2fb84308dfb016cbf4ac6bb.gif');
+            
+        }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-white ">
+  <!-- Navbar -->
+  <nav class="p-4">
+   <div class="container mx-auto flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+     <img alt="Phone Guy logo placeholder" class="w-10 h-10" height="50" src="2dbbe8adf26f721747f8c6f60b545f1e-removebg-preview.png" width="50"/>
+     <a class="text-xl font-bold" href="#">
+      Phone Guy
+     </a>
+    </div>
+    <div class="hidden md:flex space-x-4">
+     <a class="hover:text-red-500" href="#">
+      Home
+     </a>
+     <a class="hover:text-red-500" href="#">
+      Features
+     </a>
+     <a class="hover:text-red-500"  href="#down">
+      Commands
+     </a>
+     <a class="hover:text-red-500" href="https://discord.com/oauth2/authorize?client_id=1246109187491233822&permissions=414464731136&scope=bot">
+      Invite
+     </a>
+     <a class="hover:text-red-500" href="https://discord.gg/cqdSKKCgZE">
+      Support
+     </a>
+    </div>
+    <div class="md:hidden">
+     <button class="text-2xl focus:outline-none" id="menu-btn">
+      <i class="fas fa-bars">
+      </i>
+     </button>
+    </div>
+   </div>
+  </nav>
+  <!-- Mobile Menu -->
+  <div class="hidden md:hidden bg-gray-800 p-4 ,  background-image:url('b471d641c2fb84308dfb016cbf4ac6bb.gif')" id="mobile-menu">
+   <a class="block py-2 hover:text-red-500" href="#">
+    Home
+   </a>
+   <a class="block py-2 hover:text-red-500" href="#">
+    Features
+   </a>
+   <a class="block py-2 hover:text-red-500" href="#down">
+    Commands
+   </a>
+   <a class="block py-2 hover:text-red-500" href="https://discord.com/oauth2/authorize?client_id=1246109187491233822&permissions=414464731136&scope=bot">
+    Invite
+   </a>
+   <a class="block py-2 hover:text-red-500" href="https://discord.gg/cqdSKKCgZE">
+    Support
+   </a>
+  </div>
+  <!-- Hero Section -->
+  <section class=" text-center py-20, background-image:url('b471d641c2fb84308dfb016cbf4ac6bb.gif')">
+   <div class="container mx-auto, background-image:url('b471d641c2fb84308dfb016cbf4ac6bb.gif')">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+     Phone Guy Discord Bot
+    </h1>
+    <p class="text-lg md:text-2xl mb-3">
+     The ultimate multi-purpose Discord bot.
+    </p>
+    <p class="text-lg md:text-2xl mb-8">Status 🟢</p>
+   <a href="https://discord.com/oauth2/authorize?client_id=1246109187491233822&permissions=414464731136&scope=bot"> <button class="bg-red-500 text-white py-2 px-6 rounded-full text-lg">
+     Invite Phone Guy
+    </button> </a>
+   </div>
+  </section>
+  <!-- Features Section -->
+  <section class="py-20, background-image:url('b471d641c2fb84308dfb016cbf4ac6bb.gif')">
+   <div class="container mx-auto">
+    <h2 class="text-3xl font-bold mb-8">
+     Features
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <img alt="Feature 1 image placeholder" class="w-full h-64 object-cover rounded-lg mb-4" height="300" src="Screenshot (55).png" width="300"/>
+      <h3 class="text-xl font-bold">
+       Call
+      </h3>
+      <p class="text-gray-400">
+Call servers all around Discord.
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <img alt="Feature 2 image placeholder" class="w-full h-64 object-cover rounded-lg mb-4" height="300" src="Screenshot (57).png" width="300"/>
+      <h3 class="text-xl font-bold">
+       Other
+      </h3>
+      <p class="text-gray-400">
+       Check other useful and fun commands.
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <img alt="Feature 3 image placeholder" class="w-full h-64 object-cover rounded-lg mb-4" height="300" src="Screenshot (56).png" width="300"/>
+      <h3 class="text-xl font-bold">
+       Fun
+      </h3>
+      <p class="text-gray-400">
+       Engage your community with fun commands and games.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Commands Section -->
+  <section class="py-20 bg-gray-900, background-image: url('b471d641c2fb84308dfb016cbf4ac6bb.gif')">
+   <div id="down" class="container mx-auto">
+    <h2 class="text-3xl font-bold mb-8">
+     Commands
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <h3 class="text-xl font-bold">
+       /call
+      </h3>
+      <p class="text-gray-400">
+      Call a discord server.
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <h3 class="text-xl font-bold">
+       /hangup
+      </h3>
+      <p class="text-gray-400">
+       close the call
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <h3 class="text-xl font-bold">
+       /report
+      </h3>
+      <p class="text-gray-400">
+       Report someone to staff team
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <h3 class="text-xl font-bold">
+       /meme
+      </h3>
+      <p class="text-gray-400">
+       Get a random meme.
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <h3 class="text-xl font-bold">
+       /help
+      </h3>
+      <p class="text-gray-400">
+      Get the list of all the commands.
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <h3 class="text-xl font-bold">
+       /leaderbord users 
+      </h3>
+      <p class="text-gray-400">
+       See who has the most calls.
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <h3 class="text-xl font-bold">
+       /duel
+      </h3>
+      <p class="text-gray-400">
+       Play with you friend this minigame
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <h3 class="text-xl font-bold">
+       /pokemon
+      </h3>
+      <p class="text-gray-400">
+       Enter the name of a pokemon and check his stats.
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <h3 class="text-xl font-bold">
+       /ai
+      </h3>
+      <p class="text-gray-400">
+       Ask questions to the AI
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <h3 class="text-xl font-bold">
+       /coinflip 
+      </h3>
+      <p class="text-gray-400">
+       Flip the coin.
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <h3 class="text-xl font-bold">
+       /profile
+      </h3>
+      <p class="text-gray-400">
+       Check all  call information about you .
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <h3 class="text-xl font-bold">
+       /forbidden add
+      </h3>
+      <p class="text-gray-400">
+       Filter the chat.
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <h3 class="text-xl font-bold">
+       /forbidden remove
+      </h3>
+      <p class="text-gray-400">
+       Remove a forbidden word.
+      </p>
+    </div>
+    <div class="bg-gray-800 p-4 rounded-lg">
+      <h3 class="text-xl font-bold">
+       /8ball
+      </h3>
+      <p class="text-gray-400">
+       Talk with the bot.
+      </p>
+    </div>
+    <div class="bg-gray-800 p-4 rounded-lg">
+      <h3 class="text-xl font-bold">
+       /joke
+      </h3>
+      <p class="text-gray-400">
+       Get a funny joke.
+      </p>
+    </div>
+    <div class="bg-gray-800 p-4 rounded-lg">
+      <h3 class="text-xl font-bold">
+       /info
+      </h3>
+      <p class="text-gray-400">
+       Get info about the bot.
+      </p>
+    </div>
+    <div class="bg-gray-800 p-4 rounded-lg">
+      <h3 class="text-xl font-bold">
+       /forbidden list
+      </h3>
+      <p class="text-gray-400">
+       See the forbidden words.
+      </p>
+    </div>
+    <div class="bg-gray-800 p-4 rounded-lg">
+      <h3 class="text-xl font-bold">
+       /say
+      </h3>
+      <p class="text-gray-400">
+       Tell the bot to say something.
+      </p>
+    </div>
+    <div class="bg-gray-800 p-4 rounded-lg">
+      <h3 class="text-xl font-bold">
+       /ownerinfo
+      </h3>
+      <p class="text-gray-400">
+      Check in how many servers the bot is in.
+      </p>
+     </div>
+   </div>
+  </section>
+
+
+
+
+  <section class="py-20 bg-gray-900, background-image: url('b471d641c2fb84308dfb016cbf4ac6bb.gif')">
+    <div class="container mx-auto">
+     <h2 class="text-3xl font-bold mb-8">
+     Prefix Commands
+     </h2>
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <h3 class="text-xl font-bold">
+        $guessthenumber
+       </h3>
+       <p class="text-gray-400">
+      Play a minigame try to guess numbers
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <h3 class="text-xl font-bold">
+        $emojiquiz
+       </h3>
+       <p class="text-gray-400">
+       Play the emojiquiz minigame.
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <h3 class="text-xl font-bold">
+        $userinfo
+       </h3>
+       <p class="text-gray-400">
+        Get info about a ueser.
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <h3 class="text-xl font-bold">
+        $changeprefix
+       </h3>
+       <p class="text-gray-400">
+       Change the prefix of the bot.
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <h3 class="text-xl font-bold">
+        $truthordare
+       </h3>
+       <p class="text-gray-400">
+     Play the truth or dare minigame.
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <h3 class="text-xl font-bold">
+        $serverinfo
+       </h3>
+       <p class="text-gray-400">
+       Get info about the server.
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+        <h3 class="text-xl font-bold">
+         $hug
+        </h3>
+        <p class="text-gray-400">
+        Give a hug to someone.
+        </p>
+       </div>
+       <div class="bg-gray-800 p-4 rounded-lg">
+        <h3 class="text-xl font-bold">
+         $compliment
+        </h3>
+        <p class="text-gray-400">
+        Give compliment to a user.
+        </p>
+       </div>
+       <div class="bg-gray-800 p-4 rounded-lg">
+        <h3 class="text-xl font-bold">
+         $nicknamegen
+        </h3>
+        <p class="text-gray-400">
+        Generate a nickname for a user.
+        </p>
+       </div>
+       <div class="bg-gray-800 p-4 rounded-lg">
+        <h3 class="text-xl font-bold">
+         $define[word]
+        </h3>
+        <p class="text-gray-400">
+        Get a definition for every word.
+        </p>
+       </div>
+       <div class="bg-gray-800 p-4 rounded-lg">
+        <h3 class="text-xl font-bold">
+         $8ball
+        </h3>
+        <p class="text-gray-400">
+        Talk with the bot.
+        </p>
+       </div>
+       <div class="bg-gray-800 p-4 rounded-lg">
+        <h3 class="text-xl font-bold">
+         $ping
+        </h3>
+        <p class="text-gray-400">
+        Check bots Status.
+        </p>
+       </div>
+     </div>
+    </div>
+   </section>
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-10">
+   <div class="container mx-auto text-center md:text-left">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+     <div>
+      <h3 class="text-xl font-bold mb-4">
+       Phone Guy
+      </h3>
+      <ul>
+       <li>
+        <a class="hover:text-red-500" href="#">
+         Home
+          </a>
+        </li>
+       <li>
+        <a class="hover:text-red-500" href="#">
+         Features
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-red-500" href="#down">
+         Commands
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-red-500" href="https://discord.com/oauth2/authorize?client_id=1246109187491233822&permissions=414464731136&scope=bot">
+         Invite
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-red-500" href="https://discord.gg/cqdSKKCgZE">
+         Support
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h3 class="text-xl font-bold mb-4">
+       Community
+      </h3>
+      <ul>
+       <li>
+        <a class="hover:text-red-500" href="https://discord.gg/cqdSKKCgZE">
+         Discord
+        </a>
+       </li>
+      
+      
+      </ul>
+     </div>
+     <div>
+      <h3 class="text-xl font-bold mb-4">
+       Resources
+      </h3>
+      <ul>
+       <li>
+        <a class="hover:text-red-500" href="privacy.html">
+         Privacy Policy
+        </a>
+       </li>
+       <!---<li>
+        <a class="hover:text-red-500" href="#">
+         API
+        </a>
+       </li>
+       <li>--->
+        <a class="hover:text-red-500" href="#">
+         Status
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h3 class="text-xl font-bold mb-4">
+       Follow Us
+      </h3>
+      <div class="flex space-x-4">
+        Soon...
+       <!--    <a class="hover:text-red-500" href="#">
+        <i class="fab fa-facebook fa-2x">
+        </i>
+       </a>
+       <a class="hover:text-red-500" href="#">
+        <i class="fab fa-instagram fa-2x">-->
+        </i>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script>
+   document.getElementById('menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+  </script>
+
+  <style>html {scroll-behavior: smooth;}</style>
+ </body>
+</html>
